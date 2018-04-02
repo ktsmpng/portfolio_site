@@ -1,0 +1,1 @@
+web: python manage.py collectstatic --no-input; gunicorn --env DJANGO_SETTINGS_MODULE=myportfolio.settings.production myportfolio.wsgi --log-file -

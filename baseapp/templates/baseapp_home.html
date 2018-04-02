@@ -1,0 +1,165 @@
+{% extends "baseapp_base.html" %}
+{% block title %}
+	Kit Sum Pang | Portfolio Site
+{% endblock %}
+
+{% block body_content %}
+<nav class="navbar navbar-expand-sm navbar-light navbar-inverse fixed-top" style="background-color: white; padding: 0 30px;">
+  <div class="nav navbar row container-fluid">
+    <div style="display: flex;"> 
+        <a href="{% url 'home' %}"><h2>Kit Sum Pang</h2></a>
+        <i class="fa fa-circle" style="color: #FF7043; padding:10px;"></i>
+    </div>
+    <button class="navbar-toggler sticky-top" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse sticky-top" id="collapsibleNavbar">
+      <ul class="navbar-nav sticky-top">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li> 
+      </ul>
+    </div> 
+  </div>
+</nav>
+  <div>
+    <div class="row text-center row-center-flex row-height row-body-top">
+      <div class="">
+      <img src="https://media.licdn.com/dms/image/C5603AQFngaAqargmmQ/profile-displayphoto-shrink_200_200/0?e=1527199200&v=alpha&t=_HyU-obRv3SoLj1nuuej7np97eqe1bJnDRFB33vLT_0">
+      </div>
+        <div class="row-body-top-inner">
+          <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">keyboard_arrow_up</i></button>
+      <h1>Hi! My name is Kitty.</h1>
+      <h1>I am a Web Developer</h1>
+          <div>
+         <a href="https://github.com/ktsmpng">
+        <i class="fa fa-github btn icons"></i></a>
+            <a href="https://www.facebook.com/kitty.pang.967">
+        <i class="fa fa-facebook btn icons"></i></a>
+            <a href="https://www.freecodecamp.org/ktsmpng">
+        <i class="fa fa-free-code-camp btn icons"></i></a>
+            <a href="https://www.linkedin.com/in/kit-sum-pang/">
+        <i class="fa fa-linkedin-square btn icons"></i></a>
+            <a href="https://codepen.io/kitsumpang">
+        <i class="fa fa-codepen btn icons"></i></a>
+      </div>
+      </div>
+  </div>
+    <div>
+    <div class="row row-height row-center-flex" style="background-color: white;" id="about">
+        
+        <div class="col-lg-4 body-content">
+          <img src="https://image.flaticon.com/icons/svg/558/558910.svg" class="about-img">
+        </div>
+      <div class="col-lg-6 body-content" style="flex-direction: column;">
+          <h1 style="font-weight: bold;">About Me</h1>
+          <h4>I am a self-taught web developer based in Sligo, Ireland. I love all things Python and believe life is a bit like it.</h4>
+          <h4 class="quote"><strong><i>"Simple is better than complex"</i></strong> - Tim Peters | The Zen of Python</h4>
+      </div>
+      <div class="col-lg-10 body-content" style="box-shadow: -1px 4px 15px -2px; background-color: #eee; margin-bottom: 30px;">
+        <div class="row">
+          <div class="col-lg-7">
+          <h3>Coding Skills</h3>
+            <div style="display: flex;margin-top: 20px;">
+            
+            <ul>
+              <h4>Front End</h4>
+              <li>HTML5</li><div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+              <li>CSS</li> <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+</div>
+              <li>JavaScript, jQuery, AJAX</li>  <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+</div>
+            </ul>
+            <ul style="width: 200px; margin-left: 50px;">
+              <h4>Back End</h4>
+              <li>Python</li><div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+</div>
+              <li>Django</li><div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+</div>
+              <li>Java</li><div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+</div>
+              <li>SQL</li><div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+</div>         
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h3>Hobbies</h3>
+          <i class="fa fa-code" style="font-size: 50px; color: #616161"></i>
+          <i class="fa fa-gamepad" style="font-size: 50px; color: #616161"></i>
+          <i class="fa fa-table-tennis" style="font-size: 50px; color: #616161"></i>
+          <h3>Favourite Emojis</h3>
+          <div class="row emoji-icons">
+          <img src="https://image.flaticon.com/icons/png/512/616/616591.png" class="circle-icon">
+          <img src="https://image.flaticon.com/icons/svg/260/260209.svg" class="circle-icon">
+            <img src="https://image.flaticon.com/icons/png/512/260/260236.png" class="circle-icon">
+            </div>
+          </div>
+          </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+  <div>
+    <div class="row row-height" style="background-color: #FFAB40;" id="projects">
+        <div class="body-content" style="width: -webkit-fill-available;">
+          <h1>Projects</h1>
+          <div class="row row-center-flex" style="">
+            {% for project in projects %}
+            <a href="{{ project.url_link }}" id="project-item" >
+              <div class="project-item container" style="display: flex; align-items: center;flex-direction: column;">
+                <h2>{{ project.name }}</h2>
+                <img class="image" src="https://image.freepik.com/free-vector/web-page_1300-265.jpg" alt="" style="    max-height: 234px;border-radius: 0px;border: none;width: inherit;">
+                <div class="middle">
+                  <div class="text"><i class="material-icons" style="margin-right: 10px;">insert_link</i>View Source</div>
+                </div>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+    </div>
+  </div>
+    
+    <div class="row " style="background-color: #616161;" id="contact">
+        <div class="col-sm-6 body-content" style="color: white;">
+          <h1>Contact Me</h1>
+          <p style="display: flex; flex-wrap: wrap; ">Got an idea you want to turn into a website or want to simply get in touch? Drop me an email and I will respond as soon as I can. I promise.</p>
+        </div>
+      <div class="col-sm-6 body-content">
+                  <a href="mailto:" style="color: white"><h2>kitsumpang@gmail.com</h2></a>
+        <a href="https://github.com/ktsmpng">
+        <i class="fa fa-github btn sm-icons"></i></a>
+            <a href="https://www.facebook.com/kitty.pang.967">
+        <i class="fa fa-facebook btn sm-icons"></i></a>
+            <a href="https://www.freecodecamp.org/ktsmpng">
+        <i class="fa fa-free-code-camp btn sm-icons"></i></a>
+            <a href="https://www.linkedin.com/in/kit-sum-pang/">
+        <i class="fa fa-linkedin-square btn sm-icons"></i></a>
+            <a href="https://codepen.io/kitsumpang">
+        <i class="fa fa-codepen btn sm-icons"></i></a>
+      </div>
+      </div>
+
+  <div class="row footer">
+    <div class="col-sm-6 body-content">
+      <p>Copyright &copy; {% now "Y" %} <strong>Kit Sum Pang</strong>. All Rights Reserved.</p>
+    </div>
+  </div>
+{% endblock %}

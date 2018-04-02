@@ -1,0 +1,8 @@
+Django==2.0.3
+dj-database-url==0.3.0
+dj-static==0.0.6
+django-toolbelt==0.0.1
+gunicorn==19.1.1
+psycopg2
+Pillow
+whitenoise==3.3.1
